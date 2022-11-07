@@ -1,0 +1,9 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# every vagrant file will start wih below line , where 2 is the version of vagrant
+Vagrant.configure("2") do |config|
+  
+    # Box is refered to the image(os) you would like to use  
+    config.vm.box = "bento/ubuntu-20.04"
+end

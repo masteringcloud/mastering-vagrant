@@ -1,0 +1,23 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# every vagrant file will start wih below line , where 2 is the version of vagrant
+Vagrant.configure("2") do |config|
+  
+    # Box is refered to the image(os) you would like to use  
+    config.vm.box = "bento/ubuntu-20.04"
+    
+    # Host name that you want your vm to have
+    config.vm.hostname = "host1.example.com"
+    
+    # Assigning a IP to your VM 
+    config.vm.network "private_network", ip: "192.168.95.120"
+    
+    # Defining the provider, so that you can define resources to your VM
+    config.vm.provider "virtualbox" do |v|
+      v.name = "web1"
+      v.memory = 1024
+      v.cpus = 2
+    end
+  end
+  
