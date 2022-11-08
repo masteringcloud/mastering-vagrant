@@ -65,4 +65,4 @@ $ vagrant push
 $ vagrant up --provision | tee provision.log
 ```
 ## Notes
-- If you are using [VVV](https://github.com/varying-vagrant-vagrants/vvv/), you can enable xdebug by running `vagrant ssh` and then `xdebug_on` from the virtual machine's CLI.
+- If you are using VVV, you can enable xdebug by running `vagrant ssh` and then `xdebug_on` from the virtual machine's CLI.
